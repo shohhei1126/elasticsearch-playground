@@ -1,0 +1,12 @@
+index:
+  analysis:
+    tokenizer:
+      my_tokenizer:
+        type: kuromoji_tokenizer
+        mode: search
+    analyzer:
+      my_analyzer:
+        type: custom
+        tokenizer: my_tokenizer
+  number_of_shards: 1
+  number_of_replicas: 0
